@@ -13,6 +13,6 @@ public class FileReader {
         }
         catch (FileNotFoundException e) {
         }*/
-        return new Profile(profile.getAbsolutePath(), 0,  profile.getParent(), new Long(0));
+        return new Profile(profile.getAbsolutePath(), 0,  profile.list()[0], new Long(0));
     }
 }
