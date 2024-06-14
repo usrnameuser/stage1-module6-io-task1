@@ -7,6 +7,6 @@ public class FileReader {
 
     public Profile getDataFromFile(File file) {
         File profile = new File("Profile.txt");
-        return new Profile(profile.toString(), 0,  profile.toString(), new Long(0));
+        return new Profile(profile.getAbsolutePath(), 0,  profile.getAbsolutePath(), new Long(0));
     }
 }
