@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 public class FileReader {
 
     public Profile getDataFromFile(File file) {
-        File profile = new File("src/main/resources/Profile.txt");
+        File profile = new File("src/main/resources/Profile");
         /*try {
             FileInputStream profileInputStream = new FileInputStream(profile);
         }
