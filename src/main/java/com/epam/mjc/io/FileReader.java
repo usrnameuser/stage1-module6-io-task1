@@ -9,7 +9,7 @@ public class FileReader {
     public Profile getDataFromFile(File file) {
         File profile = new File("src/main/resources/Profile.txt");
         try {
-            FileInputStream profileInputStream = new FileInputStream(profile);
+            //FileInputStream profileInputStream = new FileInputStream(profile);
         }
         catch () {
         }
