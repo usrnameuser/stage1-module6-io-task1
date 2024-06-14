@@ -14,6 +14,6 @@ public class FileReader {
         catch (FileNotFoundException e) {
         }*/
         FileInputStream profileInputStream = new FileInputStream(profile);
-        return new Profile(profile.getAbsolutePath(), 0,  profile.getAbsolutePath(), new Long(0));
+        return new Profile(profile.getAbsolutePath(), 0,  profile.getParent(), new Long(0));
     }
 }
