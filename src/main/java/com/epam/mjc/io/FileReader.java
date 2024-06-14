@@ -14,6 +14,6 @@ public class FileReader {
         catch () {
         }
         
-        return new Profile("", 0,  profile.getAbsolutePath(), new Long(0));
+        return new Profile(profile.getAbsolutePath(), 0,  profile.getAbsolutePath(), new Long(0));
     }
 }
