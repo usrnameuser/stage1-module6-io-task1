@@ -14,6 +14,6 @@ public class FileReader {
         }
         catch (FileNotFoundException e) {
         }*/
-        return new Profile(profile.listFiles()[0], 0, new String(), new Long(0));
+        return new Profile(new String(), 0, new String(), new Long(0));
     }
 }
