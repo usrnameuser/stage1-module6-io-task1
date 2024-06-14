@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 public class FileReader {
 
     public Profile getDataFromFile(File file) {
-        FileInputStream profileInputStream = new FileInputStream ("Profile.txt");
+        FileInputStream profileInputStream = new FileInputStream ("resourcesс\Profile.txt");
         return new Profile();
     }
 }
