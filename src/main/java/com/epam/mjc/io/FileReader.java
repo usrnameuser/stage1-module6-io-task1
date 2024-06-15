@@ -7,20 +7,13 @@ import java.io.FileNotFoundException;
 
 public class FileReader {
 
-    public Profile getDataFromFile(File file) {
+    public Profile getDataFromFile(File file) {        
+        profileMethod();
+        return new Profile("", 0, "", new Long(0));
+    }
+
+    private void profileMethod() {
         File profile = new File("src/main/resources/Profile.txt");
-
-        /*try {
-            FileInputStream profileInputStream = new FileInputStream(profile.listFiles()[0]);
-        }
-        catch (FileNotFoundException e) {
-        }*/
-
-        FileOutputStream profileOutputStream = new FileOutputStream(profile);
-        
-        Boolean b1 = profile.canRead();
-        Boolean b3 = profile.canWrite();
-        
-        return new Profile(b1.toString(), 0, b3.toString(), new Long(0));
+        FileInputStream profileInputStream = new FileInputStream(profile);
     }
 }
