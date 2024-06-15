@@ -3,7 +3,6 @@ package com.epam.mjc.io;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 public class FileReader {
 
@@ -15,7 +14,7 @@ public class FileReader {
         }
         catch (FileNotFoundException e) {
         }*/
-        FileReader profileReader = new FileReader(profile.listFiles()[0]);
+        java.io.FileReader profileReader = new java.io.FileReader(profile.listFiles()[0]);
         return new Profile(profile.listFiles()[0].toString(), 0, new String(), new Long(0));
     }
 }
