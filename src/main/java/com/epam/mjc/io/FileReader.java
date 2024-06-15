@@ -9,8 +9,9 @@ public class FileReader {
     public Profile getDataFromFile(File file) {
         //File profile = new File("src/main/resources/Profile.txt");
         File profile = new File("src/main/resources");
+        FileInputStream profileInputStream;
         try {
-            FileInputStream profileInputStream = new FileInputStream(profile.listFiles()[0]);
+            profileInputStream = new FileInputStream(profile.listFiles()[0]);
         }
         catch (FileNotFoundException e) {
         }
