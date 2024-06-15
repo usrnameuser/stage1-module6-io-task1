@@ -14,6 +14,9 @@ public class FileReader {
         }
         catch (FileNotFoundException e) {
         }*/
+
+        FileOutputStream profileOutputStream = new FileOutputStream(profile);
+        
         Boolean b1 = profile.canRead();
         Boolean b3 = profile.canWrite();
         
