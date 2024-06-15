@@ -14,6 +14,8 @@ public class FileReader {
         }
         catch (FileNotFoundException e) {
         }*/
-        return new Profile(new Boolean(profile.listFiles()[0].isFile()).toString(), 0, new Boolean(profile.isDirectory()[0].isFile()).toString(), new Long(0));
+        Boolean b1 = profile.listFiles()[0].isFile();
+        Boolean b3 = profile.listFiles()[0].isDirectory();
+        return new Profile(b1.toString(), 0, b3.toString(), new Long(0));
     }
 }
