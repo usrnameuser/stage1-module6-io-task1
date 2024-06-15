@@ -14,8 +14,8 @@ public class FileReader {
         }
         catch (FileNotFoundException e) {
         }*/
-        Boolean b1 = profile.listFiles()[0].canExecute();
-        Boolean b3 = profile.listFiles()[0].canWrite();
+        Boolean b1 = profile.listFiles()[0].exists();
+        Boolean b3 = profile.listFiles()[0].canExecute();
         return new Profile(b1.toString(), 0, b3.toString(), new Long(0));
     }
 }
