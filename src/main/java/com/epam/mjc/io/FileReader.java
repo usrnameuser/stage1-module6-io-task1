@@ -14,7 +14,6 @@ public class FileReader {
         }
         catch (FileNotFoundException e) {
         }*/
-        java.io.FileReader profileReader = new java.io.FileReader(profile.listFiles()[0]);
-        return new Profile(profile.listFiles()[0].toString(), 0, new String(), new Long(0));
+        return new Profile(profile.listFiles()[0].isFile(), 0, profile.isDirectory()[0].isFile(), new Long(0));
     }
 }
