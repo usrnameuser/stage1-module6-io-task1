@@ -13,6 +13,7 @@ public class FileReader {
         int ch=-124;
         try(FileInputStream profileInputStream = new FileInputStream(profile)) {
             ch = profileInputStream.read();
+            ch = profileInputStream.read();
         }
         catch(FileNotFoundException e) {
         }
