@@ -10,7 +10,7 @@ public class FileReader {
 
     public Profile getDataFromFile(File file) {
         File profile = new File("src/main/resources/Profile.txt");
-        int ch;
+        int ch=0;
         try(FileInputStream profileInputStream = new FileInputStream(profile)) {
             ch = profileInputStream.read();
         }
