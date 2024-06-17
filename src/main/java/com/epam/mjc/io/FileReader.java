@@ -15,6 +15,7 @@ public class FileReader {
             ch = profileInputStream.read();
             ch = profileInputStream.read();
             ch = profileInputStream.read();
+            ch = profileInputStream.read();
         }
         catch(FileNotFoundException e) {
         }
