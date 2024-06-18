@@ -10,17 +10,12 @@ public class FileReader {
 
     public Profile getDataFromFile(File file) {
         File profile = new File("src/main/resources/Profile.txt");
-        int ch=-124;
         try(FileInputStream profileInputStream = new FileInputStream(profile)) {
-            ch = profileInputStream.read();
-            ch = profileInputStream.read();
-            ch = profileInputStream.read();
-            ch = profileInputStream.read();
         }
         catch(FileNotFoundException e) {
         }
         catch(IOException e) {
         }
-        return new Profile("", ch, "", new Long(ch));
+        return new Profile(profileInputStream.toString(), 0, "", new Long(0));
     }
 }
